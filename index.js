@@ -69,12 +69,12 @@ const ascendingBtn = document.getElementById("ascending");
 //     cartData.name.sort((a,b)=> (a.name>b.name))
 // });
 
-function searchMenu() {
-  let text = document.getElementById("search-box").value;
-  const filterData = cartData.filter(menu =>
-    menu.name.toLowerCase().includes(text.toLowerCase())
-  );
+  function searchMenu() {
+  const filterData = cartData.filter(menu =>{
+    let text = document.getElementById("search-box").value;
+   return menu.name.toLowerCase().includes(text.toLowerCase())
+   } );
   videoCard.innerHTML = "";
-  console.log(filterData);
   createCart(filterData);
+}
 }
