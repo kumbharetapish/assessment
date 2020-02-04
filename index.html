@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main id="main-container">
+        <div id="search-wrapper">
+            <input id="search-box" type="text" placeholder="Type video title here..." />
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="sort-wrapper">
+            <span>Sort by name:</span>
+            <label>
+                <input type="radio" name="sort" id= "ascending"/>
+                <span>Ascending</span>
+            </label>
+            <label>
+                <input type="radio" name="sort" />
+                <span>Descending</span>
+            </label>
+        </div>
+
+        <div id="video-card-grid">
+           
+        </div>
+
+        <div id="no-result">
+            <h1>No Results Found. Please try again.</h1>
+        </div>
+    </main>
+    <script src="./index.js" ></script>
+</body>
+</html>
